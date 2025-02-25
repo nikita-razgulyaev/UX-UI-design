@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Что такое UX/UI дизайн?</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="logo">UX/UI</div>
+    <div class="dropdown">
+      <button class="dropdown-button">Меню</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="scrollToSectionUXAndUI()" class="dropdown-item">Что такое UX/UI
+          дизайн</a>
+        <a href="#" onclick="scrollToSectionUX()" class="dropdown-item">Основные принципы UX</a>
+        <a href="#" onclick="scrollToSectionUI()" class="dropdown-item">Основные принципы UI</a>
+        <a href="#" onclick="scrollToSectionDevelopmentSteps()" class="dropdown-item">Этапы разработки UX/UI дизайна</a>
+        <a href="#" onclick="scrollToSectionSource()" class="dropdown-item">Источники</a>
+        <a href="#" onclick="scrollToSectionUsefulLink()" class="dropdown-item">Полезные ссылки</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="home-title">
+      <div class="title-small-text">Что такое </div>
+      <div class="title-big-text">UX/UI</div>
+      <div class="title-small-text">дизайн?</div>
+    </div>
+    <div class="lamp-container">
+      <img src="images/lamp_off.png" alt="Image" class="lamp" id="lamp">
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggleButton" onclick="toggleImage()">
+        <span class="slider">
+          <span class="labels"></span>
+        </span>
+      </label>
+    </div>
+  </section>
+
+  <section class="UX-and-UI" id="UXAndUI">
+    <div class="concepts">
+      <div class="concept first-concept">
+        <div class="text-concept text-first-concept">
+          UX-дизайн — это создание интуитивно понятной и удобной навигации на
+          сайте, чтобы
+          пользователи легко находили то, что им нужно, и достигали своих целей без лишних усилий.
+        </div>
+      </div>
+      <div class="concept second-concept">
+        <div class="text-concept text-second-concept">
+          UI-дизайн — это создание визуально красивого сайта, используя
+          принципы дизайна и типографики для создания привлекательного и гармоничного интерфейса.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="UX" id="UX">
+    <div class="UX-title-conrainer">
+      <div class="UX-title">Основные принципы UX дизайна</div>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">1</div>
+          <div class="principle-name">Понимание пользователя</div>
+        </div>
+        <div class="principle-description">
+          UX-дизайн базируется на глубоком понимании пользователей, их потребностей и
+          поведения. Это достигается путем исследований (интервью, опросы, тесты), позволяющих создавать продукты,
+          решающие реальные проблемы пользователей. Анализ собранных данных помогает принимать обоснованные дизайнерские
+          решения.
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">2</div>
+          <div class="principle-name">Интуитивная навигация</div>
+        </div>
+        <div class="principle-description">
+          Навигация должна быть простой и интуитивной, чтобы пользователи легко
+          находили информацию и решали задачи. Используйте знакомые элементы и логичную структуру, чтобы интерфейс был
+          понятен даже новичкам, и адаптируйте его под разные устройства и ситуации.
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">3</div>
+          <div class="principle-name">Консистентность</div>
+        </div>
+        <div class="principle-description">
+          Консистентность в дизайне (цвета, шрифты, иконки, расположение кнопок)
+          облегчает адаптацию пользователей к интерфейсу и снижает когнитивную нагрузку. Это ускоряет освоение продукта,
+          уменьшает ошибки и помогает создать узнаваемый бренд.
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">4</div>
+          <div class="principle-name">Обратная связь</div>
+        </div>
+        <div class="principle-description">
+          Пользователям нужна обратная связь на их действия (визуальная, звуковая, текстовая), чтобы понимать, что их
+          действия имеют результат. Своевременная и понятная обратная связь создает ощущение контроля и уверенности.
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">5</div>
+          <div class="principle-name">Доступность</div>
+        </div>
+        <div class="principle-description">
+          Доступность подразумевает удобство использования продукта для всех, включая людей с ограниченными
+          возможностями. Это включает контрастные цвета, альтернативный текст для изображений, навигацию с
+          клавиатуры, поддержку экранных читалок и голосовых помощников. Учитывая потребности всех пользователей, мы
+          расширяем аудиторию продукта.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="UI" id="UI">
+    <div class="UX-title-conrainer">
+      <div class="UI-title">Основные принципы UI дизайна</div>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">1</div>
+          <div class="principle-name">Визуальная иерархия</div>
+        </div>
+        <div class="principle-description">
+          Визуальная иерархия помогает пользователям ориентироваться в интерфейсе, выделяя важные элементы размером,
+          цветом, контрастом и расположением. Это улучшает восприятие и упрощает выполнение задач, особенно в сложных
+          интерфейсах.
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">2</div>
+          <div class="principle-name">Простота и минимализм</div>
+        </div>
+        <div class="principle-description">
+          Простота и минимализм в UI-дизайне позволяют избежать перегрузки информацией. Убирайте лишние элементы,
+          оставляя только необходимое, чтобы улучшить восприятие и сделать интерфейс понятнее, эстетичнее и
+          профессиональнее, особенно на мобильных устройствах.
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">3</div>
+          <div class="principle-name">Цветовая палитра</div>
+        </div>
+        <div class="principle-description">
+          Цветовая палитра должна быть ограниченной, гармоничной и соответствовать бренду. Используйте основные цвета
+          для важных элементов, дополнительные — для второстепенных, учитывая контраст и доступность, чтобы не вызывать
+          дискомфорта и улучшить восприятие.
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">4</div>
+          <div class="principle-name">Типографика</div>
+        </div>
+        <div class="principle-description">
+          Типографика важна для восприятия информации. Используйте читабельные шрифты, следите за размером и
+          интервалами. Обеспечьте достаточный контраст между текстом и фоном для комфортного чтения, учитывая стиль
+          продукта, контекст и аудиторию.
+        </div>
+      </div>
+      <div class="principle">
+        <div class="principle-container">
+          <div class="principle-number">5</div>
+          <div class="principle-name">Анимации и переходы</div>
+        </div>
+        <div class="principle-description">
+          Правильное использование плавных анимаций и переходов улучшает пользовательский опыт, помогая понять
+          взаимодействие с интерфейсом, привлекает внимание и добавляет интерактивности, но не должно отвлекать от
+          основной задачи и перегружать интерфейс.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-section" id="DevelopmentSteps">
+    <div class="steps-title-container">
+      <div class="steps-title">Этапы разработки UX/UI дизайна</div>
+    </div>
+    <div class="hint-background" id="hintBackground">
+      <div class="hint" id="hint">
+        <div class="hint-text" id="hintText">Нажми на этап чтобы сделать его активным</div>
+      </div>
+    </div>
+    <div class="steps-container">
+      <!--Путь из точек-->
+      <div class="step-by-step-way">
+        <div class="point start-point" id="startPoint"></div>
+        <div class="point usual-point" id="pt-1"></div>
+        <div class="point usual-point" id="pt-2"></div>
+        <div class="point usual-point" id="pt-3"></div>
+        <div class="point usual-point" id="pt-4"></div>
+        <div class="point usual-point" id="pt-5"></div>
+        <div class="point usual-point" id="pt-6"></div>
+        <div class="check-point" id="checkPointOne">
+          <div class="check-point-core" id="checkPointOneCore"></div>
+          <div class="check-point-ring" id="checkPointOneRing"></div>
+        </div>
+        <div class="point usual-point" id="pt-7"></div>
+        <div class="point usual-point" id="pt-8"></div>
+        <div class="point usual-point" id="pt-9"></div>
+        <div class="point usual-point" id="pt-10"></div>
+        <div class="point usual-point" id="pt-11"></div>
+        <div class="point usual-point" id="pt-12"></div>
+        <div class="point usual-point" id="pt-13"></div>
+        <div class="point usual-point" id="pt-14"></div>
+        <div class="point usual-point" id="pt-15"></div>
+        <div class="point usual-point" id="pt-16"></div>
+        <div class="point usual-point" id="pt-17"></div>
+        <div class="point usual-point" id="pt-18"></div>
+        <div class="point usual-point" id="pt-19"></div>
+        <div class="point usual-point" id="pt-20"></div>
+        <div class="check-point" id="checkPointTwo">
+          <div class="check-point-core" id="checkPointTwoCore"></div>
+          <div class="check-point-ring" id="checkPointTwoRing"></div>
+        </div>
+        <div class="point usual-point" id="pt-21"></div>
+        <div class="point usual-point" id="pt-22"></div>
+        <div class="point usual-point" id="pt-23"></div>
+        <div class="point usual-point" id="pt-24"></div>
+        <div class="point usual-point" id="pt-25"></div>
+        <div class="point usual-point" id="pt-26"></div>
+        <div class="point usual-point" id="pt-27"></div>
+        <div class="point usual-point" id="pt-28"></div>
+        <div class="point usual-point" id="pt-29"></div>
+        <div class="point usual-point" id="pt-30"></div>
+        <div class="point usual-point" id="pt-31"></div>
+        <div class="point usual-point" id="pt-32"></div>
+        <div class="point usual-point" id="pt-33"></div>
+        <div class="point usual-point" id="pt-34"></div>
+        <div class="check-point" id="checkPointThree">
+          <div class="check-point-core" id="checkPointThreeCore"></div>
+          <div class="check-point-ring" id="checkPointThreeRing"></div>
+        </div>
+        <div class="point usual-point" id="pt-35"></div>
+        <div class="point usual-point" id="pt-36"></div>
+        <div class="point usual-point" id="pt-37"></div>
+        <div class="point usual-point" id="pt-38"></div>
+        <div class="point usual-point" id="pt-39"></div>
+        <div class="point usual-point" id="pt-40"></div>
+        <div class="point usual-point" id="pt-41"></div>
+        <div class="point usual-point" id="pt-42"></div>
+        <div class="point usual-point" id="pt-43"></div>
+        <div class="point usual-point" id="pt-44"></div>
+        <div class="point usual-point" id="pt-45"></div>
+        <div class="point usual-point" id="pt-46"></div>
+        <div class="point usual-point" id="pt-47"></div>
+        <div class="point usual-point" id="pt-48"></div>
+        <div class="check-point" id="checkPointFour">
+          <div class="check-point-core" id="checkPointFourCore"></div>
+          <div class="check-point-ring" id="checkPointFourRing"></div>
+        </div>
+        <div class="point usual-point" id="pt-49"></div>
+        <div class="point usual-point" id="pt-50"></div>
+        <div class="point usual-point" id="pt-51"></div>
+        <div class="point usual-point" id="pt-52"></div>
+        <div class="point usual-point" id="pt-53"></div>
+        <div class="point usual-point" id="pt-54"></div>
+        <div class="point usual-point" id="pt-55"></div>
+        <div class="point usual-point" id="pt-56"></div>
+        <div class="point usual-point" id="pt-57"></div>
+        <div class="point usual-point" id="pt-58"></div>
+        <div class="point usual-point" id="pt-59"></div>
+        <div class="point usual-point" id="pt-60"></div>
+        <div class="point usual-point" id="pt-61"></div>
+        <div class="point usual-point" id="pt-62"></div>
+        <div class="check-point" id="checkPointFive">
+          <div class="check-point-core" id="checkPointFiveCore"></div>
+          <div class="check-point-ring" id="checkPointFiveRing"></div>
+        </div>
+        <div class="point usual-point" id="pt-63"></div>
+        <div class="point usual-point" id="pt-64"></div>
+        <div class="point usual-point" id="pt-65"></div>
+        <div class="point usual-point" id="pt-66"></div>
+        <div class="point usual-point" id="pt-67"></div>
+        <div class="point usual-point" id="pt-68"></div>
+        <div class="point end-point" id="endPoint"></div>
+      </div>
+      <div class="steps">
+        <!--Первый шаг-->
+        <div class="step fisrt-step">
+          <div class="step-background-a-inactive" onclick="animateStepOne()" id="stepOneBackground">
+            <div class="step-text">
+              <div class="step-title">Исследование и анализ</div>
+              <div class="step-description">
+                На этапе исследования важно глубоко понять аудиторию и её поведение. Для этого
+                используются различные инструменты, такие как аналитика пользовательских данных, опросы и интервью.
+              </div>
+            </div>
+            <div class="step-icon-container">
+              <div class="step-icon">
+                <img src="images/analysis-inactive.png" alt="Image" id="stepOneIcon">
+              </div>
+            </div>
+          </div>
+          <div class="step-triangle-inactive left-triangle" id="stepOneTriangle"></div>
+        </div>
+        <div class="designation-step designation-first-step">
+          <div class="word-step">Этап</div>
+          <div class="step-number">01</div>
+        </div>
+
+        <!--Второй шаг-->
+        <div class="designation-step designation-second-step">
+          <div class="word-step">Этап</div>
+          <div class="step-number">02</div>
+        </div>
+        <div class="step second-step">
+          <div class="step-triangle-inactive right-triangle" id="stepTwoTriangle"></div>
+          <div class="step-background-b-inactive" onclick="animateStepTwo()" id="stepTwoBackground">
+            <div class="step-icon-container">
+              <div class="step-icon">
+                <img src="images/layout-inactive.png" alt="Image" id="stepTwoIcon">
+              </div>
+            </div>
+            <div class="step-text">
+              <div class="step-title">Структура сайта</div>
+              <div class="step-description">
+                Создание wireframe(каркаса) и прототипа сайта, для того чтобы представить отображение элементов на
+                странице и логику взаимодейтсвия пользователя с ними.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Третий шаг-->
+        <div class="step third-step">
+          <div class="step-background-a-inactive" onclick="animateStepThree()" id="stepThreeBackground">
+            <div class="step-text">
+              <div class="step-title">Визуальный дизайн (UI)</div>
+              <div class="step-description">
+                Создание визуально привлекательного и хорошо читаемого оформления, благодаря подбору цветовой палитры
+                и шрифтов, проработке деталей и т.д.
+              </div>
+            </div>
+            <div class="step-icon-container">
+              <div class="step-icon">
+                <img src="images/design-inactive.png" alt="Image" id="stepThreeIcon">
+              </div>
+            </div>
+          </div>
+          <div class="step-triangle-inactive left-triangle" id="stepThreeTriangle"></div>
+        </div>
+        <div class="designation-step designation-third-step">
+          <div class="word-step">Этап</div>
+          <div class="step-number">03</div>
+        </div>
+
+        <!--Четвёртый шаг-->
+        <div class="designation-step designation-fourth-step">
+          <div class="word-step">Этап</div>
+          <div class="step-number">04</div>
+        </div>
+        <div class="step fourth-step">
+          <div class="step-triangle-inactive right-triangle" id="stepFourTriangle"></div>
+          <div class="step-background-b-inactive" onclick="animateStepFour()" id="stepFourBackground">
+            <div class="step-icon-container">
+              <div class="step-icon">
+                <img src="images/testing-inactive.png" alt="Image" id="stepFourIcon">
+              </div>
+            </div>
+            <div class="step-text">
+              <div class="step-title">Тестирование</div>
+              <div class="step-description">
+                Тестирование с помощью интерактивных прототипов для проверки отображения элементов и функционала
+                сайта.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Пятый шаг-->
+        <div class="step fifth-step">
+          <div class="step-background-a-inactive" onclick="animateStepFive()" id="stepFiveBackground">
+            <div class="step-text">
+              <div class="step-title">Внедрение и поддержка</div>
+              <div class="step-description">
+                При передаче макетов от дизайнеров к разработчикам, важно чётко описать детали проекта, включая
+                размеры, цвета, шрифты и интерактивные компоненты. Также нужно
+                периодически обновлять дизайн, чтобы соответствовать актуальным потребностям.
+              </div>
+            </div>
+            <div class="step-icon-container">
+              <div class="step-icon">
+                <img src="images/integration-inactive.png" alt="Image" id="stepFiveIcon">
+              </div>
+            </div>
+          </div>
+          <div class="step-triangle-inactive left-triangle" id="stepFiveTriangle"></div>
+        </div>
+        <div class="designation-step designation-fifth-step">
+          <div class="word-step">Этап</div>
+          <div class="step-number">05</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="sources" id="sources">
+    <hr class="sources-line">
+    <div class="sources-title"><span>Источники:</span></div>
+    <div class="sources-list">
+      <div class="source">
+        <a href="https://skysmart.ru/articles/programming/chto-takoe-uxui-dizajn" target="_blank">
+          <img src="images/link.png" alt="Image">
+          <div class="source-text">Что такое UX/UI-дизайн — в чем разница? Как начать? 🖍</div>
+        </a>
+      </div>
+      <div class="source">
+        <a href="https://sky.pro/wiki/profession/osnovnye-principy-uxui-dizajna/" target="_blank">
+          <img src="images/link.png" alt="Image">
+          <div class="source-text">Основные принципы UX/UI дизайна</div>
+        </a>
+      </div>
+      <div class="source">
+        <a href="https://kedu.ru/press-center/articles/info-etapy-razrabotki-ux-ui-dizayna-sayta/" target="_blank">
+          <img src="images/link.png" alt="Image">
+          <div class="source-text">Этапы разработки UX/UI дизайна сайта</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="name-and-rights">
+        <div class="footer-logo">UX/UI</div>
+        <div class="rights-reserved">©️ 2025 UX/UI</div>
+      </div>
+      <div class="useful-links" id="usefulLink">
+        <div class="useful-link-title"><span>Полезные ссылки:</span></div>
+        <div class="useful-link">
+          <a href="https://devrockets.ru/2022/06/13/vse-osnovnye-elementy-interfejsa-da-kto-takoj-etot-vash-ui-ux/"
+            target="_blank">
+            <img src="images/link.png" alt="Image" class="useful-link-image">
+            <div class="link-text">Все основные элементы интерфейса: да кто такой этот ваш UI/UX</div>
+          </a>
+        </div>
+        <div class="useful-link">
+          <a href="https://sky.pro/media/ux-ui/" target="_blank">
+            <img src="images/link.png" alt="Image" class="useful-link-image">
+            <div class="link-text">UX- и UI-дизайн: что это такое, задачи и принципы, требования к дизайнеру и
+              востребовательность профессии</div>
+          </a>
+        </div>
+        <div class="useful-link">
+          <a href="https://www.unisender.com/ru/blog/ux-i-ui-dizajn-v-chyom-raznica/" target="_blank">
+            <img src="images/link.png" alt="Image" class="useful-link-image">
+            <div class="link-text">Чем отличаются UX и UI в веб-дизайне</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

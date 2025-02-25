@@ -73,7 +73,7 @@ function animateStepOne() {
   setTimeout(NewClassCheckPointOne, 700); //check point
   setTimeout(stepOneChangeBackground, 700); //active step
   setTimeout(stepOneNewTriangleBackground, 700); //active triangle
-  setTimeout(toggleStepOneIcon, 700); //active icon
+  setTimeout(toggleStepOneIcon, 650); //active icon
 }
 
 function animateStepTwo() {
@@ -124,7 +124,7 @@ function animateStepTwo() {
   setTimeout(NewClassCheckPointTwo, 1500); // check point
   setTimeout(stepTwoChangeBackground, 1500); // active step
   setTimeout(stepTwoNewTriangleBackground, 1500); // active triangle
-  setTimeout(toggleStepTwoIcon, 1500); // active icon
+  setTimeout(toggleStepTwoIcon, 1450); // active icon
 }
 
 function animateStepThree() {
@@ -175,7 +175,7 @@ function animateStepThree() {
   setTimeout(NewClassCheckPointThree, 1500); // check point
   setTimeout(stepThreeChangeBackground, 1500); // active step
   setTimeout(stepThreeNewTriangleBackground, 1500); // active triangle
-  setTimeout(toggleStepThreeIcon, 1500); // active icon
+  setTimeout(toggleStepThreeIcon, 1450); // active icon
 }
 
 function animateStepFour() {
@@ -226,7 +226,7 @@ function animateStepFour() {
   setTimeout(NewClassCheckPointFour, 1500); // check point
   setTimeout(stepFourChangeBackground, 1500); // active step
   setTimeout(stepFourNewTriangleBackground, 1500); // active triangle
-  setTimeout(toggleStepFourIcon, 1500); // active icon
+  setTimeout(toggleStepFourIcon, 1450); // active icon
 }
 
 function animateStepFive() {
@@ -277,7 +277,7 @@ function animateStepFive() {
   setTimeout(NewClassCheckPointFive, 1500); // check point
   setTimeout(stepFiveChangeBackground, 1500); // active step
   setTimeout(stepFiveNewTriangleBackground, 1500); // active triangle
-  setTimeout(toggleStepFiveIcon, 1500); // active icon
+  setTimeout(toggleStepFiveIcon, 1450); // active icon
 }
 
 

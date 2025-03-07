@@ -275,11 +275,14 @@ function animateStepFive() {
   setTimeout(OldClassPointN62, 1550);
 
   setTimeout(NewClassCheckPointFive, 1500); // check point
-  setTimeout(stepFiveChangeBackground, 1500); // active step
-  setTimeout(stepFiveNewTriangleBackground, 1500); // active triangle
-  setTimeout(toggleStepFiveIcon, 1500); // active icon
+  setTimeout(executeAfterToggleStepFiveIcon, 1500); // active step
 }
 
+function executeAfterToggleStepFiveIcon() {
+  toggleStepFiveIcon();
+  stepFiveChangeBackground();
+  stepFiveNewTriangleBackground();
+ }
 
 /*объявление подсказки (её составляющих)*/
 const hintBackground = document.getElementById('hintBackground');
